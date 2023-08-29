@@ -9,7 +9,7 @@ public class Example {
     }
 
     static String greet(){
-        String greeting = "Hello world...!!";
-        return greeting;
+        String welcome = "Hello world...!!";
+        return welcome;
     }
 }
