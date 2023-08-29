@@ -1,4 +1,4 @@
-package com.kunal;
+package Switch;
 
 import java.util.Scanner;
 
