@@ -212,3 +212,5 @@ Here I am practicing Java Programming language in detail.
 - Multithreading
 - Fenwick Tree / Binary Indexed Tree
 - Square Root Decomposition
+
+[Note:] .class file after compilation can be found in 👉[out\production\code] folder
