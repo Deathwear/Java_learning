@@ -39,11 +39,3 @@ public class Shadowing {
         }
     }
 }
-
-// Class 3
-// Main class
-//class GFG {
-
-    // Main driver method
-
-
