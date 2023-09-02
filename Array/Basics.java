@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Basics {
@@ -44,7 +45,8 @@ public class Basics {
         // use of Scanner for taking input data of an array.
         //"arr.length" represents the length variable (length of an array i.e. depends on the size of an array) and for loop will take input accordingly.
 
-
+//      easiest way to print an array
+        System.out.println(Arrays.toString(arr));  // when you give array into it, it will convert into string and prints that string (use ctrl + keyword to look for the code)
 
 
 
