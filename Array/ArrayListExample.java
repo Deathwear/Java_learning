@@ -15,6 +15,6 @@ public class ArrayListExample {
         System.out.println(list); //can be simply printed be calling reference variable and .toString() will be called internally.
         // for loop can also be used as in arrays
         // also we can do many operation like removing values, changing values by set, and many more.
-
+        
     }
 }
