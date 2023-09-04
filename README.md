@@ -9,7 +9,7 @@ Here I am practicing Java Programming language in detail.
 - All topics will contain problems from LeetCode Easy to Hard, explained in an easy-to-understand manner.
 - Complete custom implementation of all Data Structures and Algorithms.
   
-## Lectures
+## Syllabus
 
 - Introduction to Programming
     - Types of languages
