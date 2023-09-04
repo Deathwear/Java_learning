@@ -20,7 +20,7 @@ public class MultidimensionalArray {
                         {4, 5, 6},
                         {7, 8, 9}
                 };   //can be written directly like this
-        // size of the individual rows can be different.
+                // size of the individual rows can be different.
 
     // internal working:
 /* in c++ it is continuous memory allocation
