@@ -49,9 +49,4 @@ NOTES:
             =>  it will create a new Arraylist of lets say double the size
             old elements are copied in the new list and the old elements are deleted.
             => It is amortised time complexity. (which is better than worse-case time complexity.)
--> continue from internal working of arraylist.
-
-
-
-
  */
