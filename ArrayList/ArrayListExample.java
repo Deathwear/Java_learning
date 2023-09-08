@@ -46,7 +46,7 @@ public class ArrayListExample {
 NOTES:
 -> Sizes of ArrayList is actually fixed internally
 -> We can say that ArrayList are fills by some amount
-            =>  it will create a new Arraylist of lets say double the size
+            =>  it will create a new Arraylist can be of double size
             old elements are copied in the new list and the old elements are deleted.
             => It is amortised time complexity. (which is better than worse-case time complexity.)
  */
