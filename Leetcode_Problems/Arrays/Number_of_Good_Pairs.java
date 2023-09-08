@@ -38,11 +38,6 @@ and then check for good pair by if(nums[i] == nums[j]){GoodPair++;}
 
 
  */
-public class Number_of_Good_Pairs {
-}
-
-
-
 
 class Solution {
     public int numIdenticalPairs(int[] nums) {
