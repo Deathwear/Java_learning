@@ -41,6 +41,9 @@ if(sentence.indexOf(alpha) == -1) {
 	answer= true;
 }
 
-
-
 */
+
+
+//Runtime beats 100%
+// memory beats 97%
+
