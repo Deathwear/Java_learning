@@ -1,4 +1,4 @@
-class Solution {
+class Solution7 {
     public boolean checkIfPangram(String sentence) {
         boolean answer = false;
 			for(char alpha = 'a' ; alpha<='z' ; alpha++) {

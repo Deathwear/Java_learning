@@ -31,6 +31,7 @@ public class Max_Consecutive_Ones {
         int currentCount = 0;
         int maxCount = 0;
         // nums array is already given
+        int[] nums = new int[0];
         for (int num : nums) {
             if (num == 1) {
                 currentCount++;  // Increment the count for consecutive 1's

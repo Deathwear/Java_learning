@@ -41,7 +41,7 @@ we return the sum at the end of all rows (2d array);
 
  */
 
-class Solution {
+class Solution4 {
     public int maximumWealth(int[][] accounts) {
         int ans = Integer.MIN_VALUE;
         for (int rows = 0; rows < accounts.length; rows++) {

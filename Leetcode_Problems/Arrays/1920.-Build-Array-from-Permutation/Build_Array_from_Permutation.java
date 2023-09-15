@@ -1,7 +1,7 @@
 package Leetcode_Problems.Arrays;
 
 //Sollution from here
-class Solution {
+class Solution5 {
     public int[] buildArray(int[] nums) {
         int[] ans =new int[nums.length];
         int i=0;

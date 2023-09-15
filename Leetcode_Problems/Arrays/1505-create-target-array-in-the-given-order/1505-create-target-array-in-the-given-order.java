@@ -1,4 +1,5 @@
-class Solution {
+@SuppressWarnings("ALL")
+class solution {
     public int[] createTargetArray(int[] nums, int[] index) { //nums and index array would be of same size
         int[] target = new int[nums.length]; // initializing an array
         for(int i=0; i<index.length; i++){               // 1st or loop for ith index 

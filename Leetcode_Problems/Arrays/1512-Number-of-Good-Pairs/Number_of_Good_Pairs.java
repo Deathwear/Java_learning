@@ -39,7 +39,7 @@ and then check for good pair by if(nums[i] == nums[j]){GoodPair++;}
 
  */
 
-class Solution {
+class Solution3 {  //class name change using intellij Idea all are in same project
     public int numIdenticalPairs(int[] nums) {
         //initializing Count for GoodPair
         int GoodPair = 0;
