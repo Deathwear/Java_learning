@@ -1,4 +1,7 @@
-class Solution {
+import java.util.*;
+
+@SuppressWarnings("ALL")
+class Solution8 {
 
     private void dfs(String s, Map<String, PriorityQueue<String>> map, LinkedList<String> list){
 
@@ -14,7 +17,7 @@ class Solution {
 
     }
 
-    public List<String> findItinerary(List<List<String>> tickets) {
+    public LinkedList<String> findItinerary(List<List<String>> tickets) {
 
         HashMap<String, PriorityQueue<String>> map = new HashMap<>();
 

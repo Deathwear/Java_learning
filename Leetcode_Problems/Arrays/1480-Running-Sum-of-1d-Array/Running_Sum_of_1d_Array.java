@@ -14,7 +14,7 @@ package Leetcode_Problems.Arrays;
    we will get the running sum with this for eg: 3rd index sum would be 2nd index of sum + 3rd index of array;
 
  */
-class Solution {
+class solution {
     public int[] runningSum(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
             // nums[0] = nums[0];
