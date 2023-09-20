@@ -6,6 +6,8 @@ public class Main {
         int target = 19;
         int ans = linearSearch(nums, target);
         System.out.println(ans);
+        int ans2 = linearSearch2(nums, target);
+        System.out.println(ans2);
         
     }
 
