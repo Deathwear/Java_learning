@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class Solution1706 {
     public int minCostConnectPoints(int[][] points) {
         //dist[i] := min distance to connect points[i]
         int[] dist = new int[points.length];
