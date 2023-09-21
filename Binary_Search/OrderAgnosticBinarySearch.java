@@ -14,7 +14,7 @@ public class OrderAgnosticBinarySearch {
         int start = 0;
         int end = arr.length -1;
 
-        // find wether the array is sorted in ascending or descending order
+        // find whether the array is sorted in ascending or descending order
         boolean isAsc = arr[start]<arr[end];  //return true if it is in ascending order.
 
 

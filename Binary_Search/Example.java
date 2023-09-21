@@ -21,6 +21,7 @@ public class Example {
 //            int mid= (start + end) /2; // might be possible that (start + end) exceeds the range of integer in java
             int mid = start + (end - start) / 2;  //this will fit easily in the integer limit of java
 
+//            we can only do this if we know that array is in ascending order. otherwise we have to go for order agnostic BinarySearch
             if (target < arr[mid]) {
                 end = mid-1;
             } else if (target > arr[mid]) {
@@ -35,3 +36,11 @@ public class Example {
 
 
 // We are using while loop in Binary search.
+/*
+here we have start and end indexes as start at 0  and end at arr.length-1
+then we need to find the mid to divide the array in half
+then check for if target>mid in ascending order means it is on the right side then we need to shift the start value and check again for the same process
+or else if target<mid then it means that it is on the left side of the mid-value then we need to shift the end index to mid-1
+else if target = mid then we return the ans
+or keep repeating the steps until target== mid-index value, and it will return the index value of the target.
+ */
