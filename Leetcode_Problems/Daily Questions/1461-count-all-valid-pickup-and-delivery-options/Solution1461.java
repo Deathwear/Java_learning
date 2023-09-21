@@ -1,4 +1,4 @@
-public class Solution {
+public class Solution1461 {
     private static final int MOD = 1000000007;
 
     public int countOrders(int n) {
