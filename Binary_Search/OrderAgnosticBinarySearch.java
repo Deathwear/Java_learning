@@ -45,3 +45,15 @@ public class OrderAgnosticBinarySearch {
         return -1;
     }
 }
+/*
+here we have used boolean value for if it is ascending or not
+if this is true, then it means it is ascending
+if it is false, then it means it is descending
+
+for true, we will code for an ascending array by changing the index value of start and end accordingly.
+and for false, we will code for a descending array by changing the index value of start and end accordingly.
+
+then we will code similar to example.java, but we have to write code for both ascending and descending.
+
+
+ */
