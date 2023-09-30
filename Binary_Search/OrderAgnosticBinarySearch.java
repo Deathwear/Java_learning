@@ -18,7 +18,7 @@ public class OrderAgnosticBinarySearch {
         boolean isAsc = arr[start]<arr[end];  //return true if it is in ascending order.
 
 
-
+//        check only till start == end. after that -1 is returned means target value is not present in the array
         while (start <= end){
             //find the middle element
 //            int mid= (start + end) /2; // might be possible that (start + end) exceeds the range of integer in java
@@ -28,13 +28,13 @@ public class OrderAgnosticBinarySearch {
             return mid;
             }
 
-            if(isAsc) {
+            if(isAsc) {  // for true value means for an ascending array.
                 if (target < arr[mid]) {
                     end = mid - 1;
                 } else if (target > arr[mid]) {
                     start = mid + 1;
                 }
-            }else {
+            }else {  // for false boolean value means for descending array.
                 if (target > arr[mid]) {
                     end = mid -1;
                 }else {
