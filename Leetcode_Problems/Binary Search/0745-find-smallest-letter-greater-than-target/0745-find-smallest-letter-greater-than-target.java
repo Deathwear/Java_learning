@@ -1,4 +1,4 @@
-class Solution {
+class Solution745 {
     public char nextGreatestLetter(char[] letters, char target) {
         int start = 0;
         int end = letters.length -1;

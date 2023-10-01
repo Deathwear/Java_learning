@@ -16,10 +16,11 @@ public class Example {
         int start = 0;
         int end = arr.length -1;
 
+
         while (start <= end){
             //find the middle element
 //            int mid= (start + end) /2; // might be possible that (start + end) exceeds the range of integer in java
-            int mid = start + (end - start) / 2;  //this will fit easily in the integer limit of java
+            int mid = start + (end - start) / 2;//this will fit easily in the integer limit of java
 
 //            we can only do this if we know that array is in ascending order. otherwise we have to go for order agnostic BinarySearch
             if (target < arr[mid]) {
