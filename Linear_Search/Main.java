@@ -18,11 +18,11 @@ public class Main {
             return -1;
         }
         //run for a loop
-        for (int index = 0; index < arr.length; index++) {
+        for (int i = 0; i < arr.length; i++) {
             //check for element at every index if it is = target
-            int element = arr[index];
+            int element = arr[i];
             if (element == target) {
-                return index;
+                return i;
             }
         }
 
