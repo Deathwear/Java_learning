@@ -4,7 +4,7 @@ public class Example {
     public static void main(String[] args) {
         // We know that array is sorted in increasing order.
         int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
-        int target = 22;
+        int target = 456;
         int ans = binarySearch(arr, target);
         System.out.print("Index point of our target is: ");
         System.out.println(ans);
@@ -30,6 +30,8 @@ public class Example {
                 return mid;
             }
         }
+        // this part will execute only when nothing is return from above or above condition are not met.
+        System.out.println("-1 means element is not present in the array.");
         return -1;
     }
 }
