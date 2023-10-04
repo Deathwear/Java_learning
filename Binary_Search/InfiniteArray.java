@@ -23,7 +23,7 @@ public class InfiniteArray {
             end = end + (end - start + 1) * 2;  // here I am using old start (that's why needed to declare new start earlier)
             start = newStart;
         }
-        return BinarySearch(arr, target, start, end);  // this will returnn the start, end, arr, and target for the answer each time in the while loop
+        return BinarySearch(arr, target, start, end);  // this will return the start, end, arr, and target for the answer each time in the while loop
         // until we find the correct RAnge where our target lies this while loop will  using to find the range where our target exist only then it will return the start and end
         // and then that start and end (only where our target exist) will go to  the BinarySearch method to find the target
     }
@@ -48,11 +48,5 @@ public class InfiniteArray {
  declare the range for start and end after every while loops break, we need to double the range and start the procedure again till we find that our target lies inside the range and pass that range only for binary search
  we are needed to pass the start and end in the binary search method where our target lies.
 => if target is greater than end then, of course target will not lie in that Range.
-
-
-
-
-
-
 
  */
