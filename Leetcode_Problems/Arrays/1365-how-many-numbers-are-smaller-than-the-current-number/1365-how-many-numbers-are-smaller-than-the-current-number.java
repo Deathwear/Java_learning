@@ -1,4 +1,4 @@
-class Solution1365 {
+class Solution1365v2{
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] ans = new int [nums.length]; //length could never be greater than nums length
         //initializing first loop for i
