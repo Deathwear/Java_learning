@@ -1,4 +1,4 @@
-class Solution {
+class Solution704 {
     public int search(int[] nums, int target) {
         // declaring all pointers
         int start = 0;
