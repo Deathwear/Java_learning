@@ -68,5 +68,5 @@ public class SearchInMountain {
 
 }
 
-// In leetcode just convert all array and their calls according to API as asked in question.
+// In leetcode convert all arrays and their calls according to API as asked in question.
 
