@@ -1,4 +1,4 @@
-class Solution {
+class Solution0034 {
     public int[] searchRange(int[] nums, int target) {
         int[] output = {-1, -1};
         // the value of first and last index is found here by calling search method

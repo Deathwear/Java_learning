@@ -1,6 +1,6 @@
-class Solution {
+class Solution0162 {
     public int findPeakElement(int[] nums) {
-                int start = 0;
+        int start = 0;
         int end = nums.length-1;
 
         while(start<end){  // loop will break when start = end (this is the peak point)
