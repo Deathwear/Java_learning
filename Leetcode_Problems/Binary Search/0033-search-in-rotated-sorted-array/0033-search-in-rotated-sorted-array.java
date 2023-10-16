@@ -1,4 +1,4 @@
-class Solution {
+class Solution0033 {
     public int search(int[] nums, int target) {
         int pivot = findPivot(nums);
 
