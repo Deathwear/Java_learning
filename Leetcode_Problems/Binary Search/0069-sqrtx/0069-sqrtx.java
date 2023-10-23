@@ -1,4 +1,4 @@
-class Solution {
+class Solution0069 {
     public int mySqrt(int x) {
         // For special cases when x is 0 or 1, return x.
         if (x == 0 || x == 1)
