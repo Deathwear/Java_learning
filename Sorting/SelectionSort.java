@@ -9,7 +9,7 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void selectionSorting(int[] arr){
+    public static void selectionSorting(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             //find the maximum item in the remaining array and swap with correct index.
             int last = arr.length - i- 1;  // last index where to place the largest element for that
@@ -18,18 +18,17 @@ public class SelectionSort {
         }
     }
 
-    static void swap(int[] arr, int first, int second){
+    public static void swap(int[] arr, int first, int second){
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
     }
 
-    static int getMaxIndex(int[] arr, int start, int end){
+    public static int getMaxIndex(int[] arr, int start, int end){
         int max = start;
-
         for (int i = start; i <= end ; i++) {
-            if (arr[max] > arr[i]){
-                i = max;
+            if (arr[max] < arr[i]){
+                max = i;
             }
         }
         return max;
