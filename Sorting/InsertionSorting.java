@@ -17,7 +17,7 @@ public class InsertionSorting {
             for (int j = i+1; j >0; j--) {
                 if (arr[j] < arr[j-1]) {
                     swap(arr, j , j-1);
-                }else{
+                }else{  // You can debug and check for this part.
                     break;  // If previous elements are already sorted then no need to check for them because we are already checking them from beginning. Therefore, we are using break here
                 }
             }
