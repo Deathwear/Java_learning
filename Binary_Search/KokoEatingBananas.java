@@ -40,4 +40,3 @@ public class KokoEatingBananas {
         return true;
     }
 }
-
