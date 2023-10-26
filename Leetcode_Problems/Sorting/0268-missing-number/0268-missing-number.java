@@ -1,4 +1,4 @@
-class Solution {
+class Solution0268 {
     public int missingNumber(int[] nums) {
         int i = 0;
         while (i < nums.length){
@@ -24,3 +24,4 @@ class Solution {
         arr[second] = temp;
     }
 }
+// I have used the concept of cyclic sort here.
