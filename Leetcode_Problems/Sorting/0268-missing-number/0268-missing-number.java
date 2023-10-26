@@ -12,7 +12,7 @@ class Solution0268 {
         // search for first missing number
         for(int index = 0; index < nums.length; index++){
             if(index != nums[index]){
-                return index;
+                return index;  // we are needed to return the index that is also element value (if we return element the result will not be the desired output// )
             }
         }
         return nums.length; // here it means that all the element are present at right index therefore the last element is missing that's why we are needed to return last element'
