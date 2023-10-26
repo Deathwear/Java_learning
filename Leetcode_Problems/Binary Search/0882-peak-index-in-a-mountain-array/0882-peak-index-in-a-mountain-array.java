@@ -1,5 +1,5 @@
 // Using same approach of binary search 
-class Solution {
+class Solution0882 {
     public int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length-1;
