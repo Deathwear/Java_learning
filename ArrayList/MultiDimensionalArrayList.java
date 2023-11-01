@@ -9,7 +9,7 @@ public class MultiDimensionalArrayList {
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 
         //initialisation
-        System.out.println("Enter 3 elements to add in ArrayList: ");
+        System.out.println("Enter 3 rows and 3 columns element to add in ArrayList: ");
         for (int i = 0; i < 3; i++) {
             list.add(new ArrayList<>());
         }
