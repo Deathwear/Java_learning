@@ -1,4 +1,7 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution0448 {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         int i =0;
         while(i<nums.length){
