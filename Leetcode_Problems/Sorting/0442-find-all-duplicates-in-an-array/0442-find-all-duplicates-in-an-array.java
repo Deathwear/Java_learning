@@ -1,4 +1,7 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution442 {
     public List<Integer> findDuplicates(int[] arr) {
         int i=0;
         while(i < arr.length){
