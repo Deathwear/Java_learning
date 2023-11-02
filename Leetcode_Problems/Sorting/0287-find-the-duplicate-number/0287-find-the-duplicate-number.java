@@ -1,4 +1,4 @@
-class Solution {
+class Solution0287 {
     public int findDuplicate(int[] arr) {
         int i =0;
         // performing cyclic sort
@@ -23,3 +23,5 @@ class Solution {
         arr[second] = temp;
     }
 }
+
+// asked in amazon and microsoft also.
