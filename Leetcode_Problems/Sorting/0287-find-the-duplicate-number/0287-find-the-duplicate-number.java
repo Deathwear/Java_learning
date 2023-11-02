@@ -1,3 +1,4 @@
+// Amazon & Microsoft Interview Question.
 class Solution0287 {
     public int findDuplicate(int[] arr) {
         int i =0;
