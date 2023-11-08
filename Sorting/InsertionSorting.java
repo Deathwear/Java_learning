@@ -12,7 +12,7 @@ public class InsertionSorting {
 
     // Insertion Sorting technique for sorting array
     public static void insertionSorting(int[] arr){
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length-1; i++) {  // (i will run till length-2)
             // j is starting after ith position, moving backwards by comparing and replacing them. if it is bigger value then it breaks because previous elements are already sorted by it (it has started from the beginning and already checked it) i.e., started from comparing zero at the very beginning.
             for (int j = i+1; j >0; j--) {
                 if (arr[j] < arr[j-1]) {
