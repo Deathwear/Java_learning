@@ -1,5 +1,5 @@
 // Asked in Amazon Interview Question.
-class Solution {
+class Solution0041 {
     public int firstMissingPositive(int[] nums) {
         int i = 0;
         while(i<nums.length){
