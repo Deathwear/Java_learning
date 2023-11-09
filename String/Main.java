@@ -14,3 +14,9 @@ public class Main {
     }
 }
 // if we decide to change the value of 'a' then a will points towards another object and Aamir will go to garbage collection.
+
+/*
+There are mainly two concept of Strings:
+   => Pooling
+   => Immutability
+ */
