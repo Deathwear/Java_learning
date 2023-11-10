@@ -15,6 +15,15 @@ public class Operators {
         System.out.println("Aamir" + new ArrayList<>());  // recall what is the .toString of ArrayList is doing internally (it is empty so returning [] as an empty array list.)
         System.out.println("Aamir" + new Integer(56));  // check its .toString method called internally (Integer part is converted into String)
 //        System.out.println(new ArrayList<>() + new Integer(56)); // check what happens to this (bad operand types for binary operator '+'first type:  java.util.ArrayList<java.lang.Object> second type: java.lang.Integer) // that will give error
-
+        // + in java can only be used with premitives and with all complex object as well but atleast one of the object should have type string
+        String ans = new ArrayList<>() + new Integer(56);
+        System.out.println(ans);   // This will work very fine bcz we changed this into string.
     }
 }
+
+
+/*               -----------------<Important>--------------------
+//        System.out.println(new ArrayList<>() + new Integer(56)); // check what happens to this (bad operand types for binary operator '+'first type:  java.util.ArrayList<java.lang.Object> second type: java.lang.Integer) // that will give error
+        // + in java can only be used with primitives and with all complex object as well but at-least one of the object should have type string
+        in this condition both expressions are not string or primitive datatype.
+ */
