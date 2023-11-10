@@ -16,7 +16,7 @@ public class Operators {
         System.out.println("Aamir" + new Integer(56));  // check its .toString method called internally (Integer part is converted into String)
 //        System.out.println(new ArrayList<>() + new Integer(56)); // check what happens to this (bad operand types for binary operator '+'first type:  java.util.ArrayList<java.lang.Object> second type: java.lang.Integer) // that will give error
         // + in java can only be used with premitives and with all complex object as well but atleast one of the object should have type string
-        String ans = new ArrayList<>() + new Integer(56);
+        String ans = new ArrayList<>() + new Integer(56); // we have conerted this output into string output so that we can print this output.
         System.out.println(ans);   // This will work bcz very fine we changed this into string.
     }
 }
@@ -26,4 +26,10 @@ public class Operators {
 //        System.out.println(new ArrayList<>() + new Integer(56)); // check what happens to this (bad operand types for binary operator '+'first type:  java.util.ArrayList<java.lang.Object> second type: java.lang.Integer) // that will give error
         // + in java can only be used with primitives and with all complex object as well but at-least one of the object should have type string
         in this condition both expressions are not string or primitive datatype.
+
+       => In java operator, overloading is not supported, but in c++/python operator, overloading is supported (but that results in poor code)
+       => + operator that is intentionally supported in java to support string concatenation.(works as exception for string)
+
+
+
  */
