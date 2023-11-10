@@ -9,7 +9,7 @@ public class Operators {
         System.out.println('a' + 3);  // this will print the ascii value of 'd' i.e., 100 (here: a moves three letter forwards and becomes d then it prints the ascii value of d)
         System.out.println('a');  // but this will print only a char
         System.out.println((char) ('a' + 3));  // this will just prints the character value i.e., 'd'.
-        System.out.println("a" + 1); // NOTE: when an integer is concatenated to string, it is converted to its wrapper class integer  (integer will be converted to Integer that will call .toString())
+        System.out.println("a" + 1); // NOTE: when an integer is concatenated to string, it is converted to its wrapper class integer (integer will be converted to Integer that will call .toString())
 
         //More complex datatype: (for example)
         System.out.println("Aamir" + new ArrayList<>());  // recall what is the .toString of ArrayList is doing internally (it is empty so returning [] as an empty array list.)
@@ -17,7 +17,7 @@ public class Operators {
 //        System.out.println(new ArrayList<>() + new Integer(56)); // check what happens to this (bad operand types for binary operator '+'first type:  java.util.ArrayList<java.lang.Object> second type: java.lang.Integer) // that will give error
         // + in java can only be used with premitives and with all complex object as well but atleast one of the object should have type string
         String ans = new ArrayList<>() + new Integer(56); // we have converted this output into string output so that we can print this output.
-        System.out.println(ans);   // This will work bcz very fine we changed this into string.
+        System.out.println(ans); // This will work bcz very fine we changed this into string.
     }
 }
 
