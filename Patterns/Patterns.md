@@ -38,7 +38,7 @@ These are the pattern questions we are needed to practice
 ****
 ***
 **
-    *
+*
 
 
 6.       *
@@ -51,8 +51,8 @@ These are the pattern questions we are needed to practice
 7.   *****
       ****
        ***
-     **
-     *
+        **
+         *
 
 
 8.      *
