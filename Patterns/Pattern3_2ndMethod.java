@@ -1,15 +1,15 @@
 package Patterns;
 
-public class Pattern3 {
+public class Pattern3_2ndMethod {
     public static void main(String[] args) {
-        System.out.println("The pattern 3 is printed like this: ");
+        System.out.println("The pattern 2 is printed like this: ");
         pattern3(4);
     }
 
     static void pattern3(int n){
-        for (int row = n; row >= 0; row--) {
+        for (int row = 1; row <= n; row++) {
             // for every row, run the col
-            for (int col = row; col >= 0 ; col--) {   // same as ques2 but only need to keep column size decreasing every time (we can also do n+1-r)
+            for (int col = 1; col <= n+1-row ; col++) {
                 System.out.print("*");
             }
             //when one row is printed, we are needed to add a newline.
