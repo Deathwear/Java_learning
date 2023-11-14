@@ -5,10 +5,10 @@ import javax.crypto.spec.PSource;
 public class Pattern5 {
     public static void main(String[] args) {
         System.out.println("The pattern 2 is printed like this: ");
-        pattern1(5);
+        pattern5(5);
     }
 
-    static void pattern1(int n){
+    static void pattern5(int n){
         for (int row = 1; row <= 2*n-1; row++) {
             int totalColsInRow = row >n ? 2 *n - row: row;  //if columns are greater than n then total columns will be 2n-row else they will be like only equal to row like in ques 2.
             for (int col = 1; col <= totalColsInRow; col++) {
