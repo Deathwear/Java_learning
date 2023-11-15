@@ -4,7 +4,6 @@ import javax.crypto.spec.PSource;
 
 public class Pattern5 {
     public static void main(String[] args) {
-        System.out.println("The pattern 2 is printed like this: ");
         pattern5(5);
     }
 
