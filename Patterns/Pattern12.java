@@ -2,10 +2,10 @@ package Patterns;
 
 public class Pattern12 {
     public static void main(String[] args) {
-        pattern5(5);
+        pattern12(5);
     }
 
-    static void pattern5(int n){
+    static void pattern12(int n){
         for (int row = 1; row <= 2*n; row++) {
             int totalColsInRow = row > n ? 2 *n - row+1: row;  // If-Else notation.
             for (int col = 0; col < totalColsInRow; col++) {
