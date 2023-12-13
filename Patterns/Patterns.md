@@ -1,5 +1,7 @@
 These are the pattern questions we are needed to practice 
 
+if it is not visible clearly please see this in raw format 
+
 
 
 1.  *****
