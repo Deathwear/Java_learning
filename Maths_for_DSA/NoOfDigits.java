@@ -5,9 +5,9 @@ package Maths_for_DSA;
 
 public class NoOfDigits {
     public static void main(String[] args) {
-        int n = 34567;
-        int b = 10;
-
+        int n = 10;
+        int b = 2;
+// this will give the no. of digits in binary representation of 10. i.e., 1010
         int ans = (int)(Math.log(n) / Math.log(b)) + 1;   // this is the formula for finding no of digits for any representation
 
         System.out.println(ans);
