@@ -1,3 +1,5 @@
+// leetcode ques no 832 https://leetcode.com/problems/flipping-an-image/description/
+
 package Maths_for_DSA;
 
 public class FlipImage {
@@ -17,3 +19,10 @@ public class FlipImage {
         return image;
     }
 }
+
+/*
+performing XOR 0,1 with 1 will flop their values as:
+        for 0>> 0 ^ 1 = 1 (0 becomes 1)
+        for 1>> 1 ^ 1 = 0 (1 becomes 0)
+
+ */
