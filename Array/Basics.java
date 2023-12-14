@@ -10,10 +10,10 @@ public class Basics {
         // datatype[] variable_name = new datatype[size];
         // or, datatype[] var_name = {20, 35, 257, 45};
 
-        //it is dynamic memory allocation (objects are created at runtime)
+        //it is a dynamic memory allocation (objects are created at runtime)
         // datatype and reference_variable are created at compile time and are stored in stack memory.
         // array objects are stored in heap memory
-        // In JLS (java language specification) , they have mentioned that heap objects are not continuous.
+        // In JLS (java language specification); they have mentioned that heap objects are not continuous.
 
         // Example:
         int[] arr = new int[5];
