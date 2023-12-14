@@ -24,5 +24,4 @@ public class FlipImage {
 performing XOR 0,1 with 1 will flop their values as:
         for 0>> 0 ^ 1 = 1 (0 becomes 1)
         for 1>> 1 ^ 1 = 0 (1 becomes 0)
-
  */
