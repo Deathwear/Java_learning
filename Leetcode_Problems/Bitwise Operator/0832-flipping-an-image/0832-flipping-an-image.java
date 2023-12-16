@@ -1,4 +1,4 @@
-class Solution {
+class Solution0832 {
     public int[][] flipAndInvertImage(int[][] image) {
         for (int[] row: image){
             // revert the elements of the 2d array.
