@@ -4,7 +4,7 @@ public class BinarySearchSQRT {
     public static void main(String[] args) {
         int n = 40;     // number of which square root is needed to find
         int p = 3;      // precision value till how many decimal values i wanted
-        System.out.println(sqrt(n, p));
+        System.out.printf("%.3f", sqrt(n, p));
     }
 
     static double sqrt(int n, int p){
