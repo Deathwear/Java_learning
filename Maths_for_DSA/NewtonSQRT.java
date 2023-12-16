@@ -21,7 +21,7 @@ public class NewtonSQRT {
 }
 
 /*   Basically if:
-            root = 0.5 * (x + (n/x))  this is the newton's formula for finding square root of x
+            root = 0.5 * (x + (n/x)) this is the newton's formula for finding square root of x
             the error here is error = |root - x| and hence we need to minimize the value of error to get the precise value of root
 
 it has a time complexity of fast fourier transform.
