@@ -39,3 +39,4 @@ public class BinarySearchSQRT {
         return root;
     }
 }
+// Time Complexity: O(log(n))
