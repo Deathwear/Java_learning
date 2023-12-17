@@ -37,7 +37,7 @@ public class Factors {
 
     // both time and space will be O(sqrt(n))
     static void method3(int n){
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();  // created list to store another half of the array and print it at the last in the descending order.
         for (int i = 1; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 if (n/i == i){
