@@ -17,4 +17,9 @@ public class From1toN {
 so that it will print in ascending order.
 otherwise,
 if we print the function first and then call the function n-1 later then it will be printed in the descending order
-(because of the function not remain in stack memory) */
+(because of the function not remain in stack memory)
+
+ here it works as:
+ F(5) -> F(4) -> F(3) -> F(2) -> F(1) -> print(1) -> print(2) -> print(3) -> print (4) -> print(5);
+ function ends no more calls left.
+ */
