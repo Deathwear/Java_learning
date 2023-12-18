@@ -13,3 +13,8 @@ public class From1toN {
         System.out.print(n + " ");
     }
 }
+/* if function call appears first then value remains in the stack and calls for another function before printing,
+so that it will print in ascending order.
+otherwise,
+if we print the function first and then call the function n-1 later then it will be printed in the descending order
+(because of the function not remain in stack memory) */
