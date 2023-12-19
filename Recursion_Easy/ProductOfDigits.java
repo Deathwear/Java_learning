@@ -2,7 +2,7 @@ package Recursion_Easy;
 
 public class ProductOfDigits {
     public static void main(String[] args) {
-        int ans = digits(1432);
+        int ans = digits(505);
         System.out.println(ans);
     }
 
@@ -13,3 +13,11 @@ public class ProductOfDigits {
         return (n%10) * digits(n/10);
     }
 }
+
+/*
+we can also use base case as:
+                if(n%10 == n){
+                    return n;
+                }
+
+ */
