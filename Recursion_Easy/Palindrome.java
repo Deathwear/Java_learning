@@ -3,6 +3,8 @@ package Recursion_Easy;
 public class Palindrome {
     public static void main(String[] args) {
         System.out.println(palindrome(1234321));
+        String str = "12321";
+        System.out.println(method2(str));
     }
 
     static boolean palindrome(int n){
@@ -22,5 +24,19 @@ public class Palindrome {
         }
         int rem = n % 10;
         return rem * (int)Math.pow(10, digits-1) + helper(n/10, digits-1);
+    }
+
+    // using indices value for string
+    public static boolean method2(String str) {
+        // base case
+        if (str.length() == 0 || str.length() == 1) {
+            return true;
+        }
+        // check first and last characters
+        if (str.charAt(0) != str.charAt(str.length()-1)) {
+            return false;
+        }
+        // check the remaining string
+        return method2(str.substring(1, str.length()-1));
     }
 }
