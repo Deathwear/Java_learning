@@ -1,4 +1,4 @@
-class Solution {
+class Solution0907 {
     public int minEatingSpeed(int[] piles, int h) {
         int start = 1;
         int end = Integer.MIN_VALUE; // for finding largest value in piles
