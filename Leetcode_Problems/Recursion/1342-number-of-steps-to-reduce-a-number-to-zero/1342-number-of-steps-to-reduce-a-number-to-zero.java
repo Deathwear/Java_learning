@@ -1,4 +1,4 @@
-class Solution {
+class Solution1342 {
     public static int numberOfSteps(int num){
         return helper(num, 0);
     }
