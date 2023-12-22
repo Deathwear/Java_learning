@@ -14,3 +14,9 @@ public class Concept {
         fun(--n);
     }
 }
+/*
+There is a lot of difference between f-- and --f :
+in f-- >> function is executed first and then the variable of function decreases.
+Whether in --f  >> variable of function decreases first then the function is executed.
+
+ */
