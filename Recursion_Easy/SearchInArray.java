@@ -23,6 +23,11 @@ public class SearchInArray {
         System.out.println(ans + " ArrayList is created inside the body of the function");
 
         System.out.println(list);
+
+
+
+        // this is when Arraylist is not takes in the array arguments and takes inside the body
+        System.out.println("ArrayList is not taken in the arguments" + searchAllIndexlist2(arr, 4, 0));
     }
 
     static int search(int[] arr, int target, int index){
@@ -73,5 +78,28 @@ public class SearchInArray {
             list.add(index);   // it will add the values to the ArrayList but doen't return it
         }
         return searchAllIndexlist(arr, target, index + 1, list);  // this will return its whole value to its previous own function call till all the memory in the stack.
+    }
+
+
+    // this is very complex please understand it very carefully.
+    // Don't use this approach but should understand the concept
+    static ArrayList<Integer> searchAllIndexlist2(int[] arr, int target, int index){
+        ArrayList<Integer> list = new ArrayList<>();
+
+        if (index == arr.length){
+            return list ;
+        }
+
+        // this will contain ans for that function call only
+        if (arr[index] == target){
+            list.add(index);
+        }
+
+        ArrayList<Integer> ansFromBelowCalls = searchAllIndexlist2(arr, target, index + 1);
+
+        list.addAll(ansFromBelowCalls);  // this will add all the ArrayList named "ansFromBelowCalls"
+        // into the arrayList named as a list which is initialized above inside the same body of the function.
+
+        return list;  // after adding one list to another list, we return the list to above-called function.
     }
 }
