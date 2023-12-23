@@ -81,7 +81,7 @@ public class SearchInArray {
     }
 
 
-    // this is very complex please understand it very carefully.
+    // this is very complex, please understand it very carefully.(Have some coffee I suggest)
     // Don't use this approach but should understand the concept
     static ArrayList<Integer> searchAllIndexlist2(int[] arr, int target, int index){
         ArrayList<Integer> list = new ArrayList<>();
