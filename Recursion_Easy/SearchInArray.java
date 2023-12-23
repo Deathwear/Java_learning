@@ -1,5 +1,7 @@
 package Recursion_Easy;
 
+import com.sun.security.jgss.GSSUtil;
+
 import java.util.ArrayList;
 
 public class SearchInArray {
@@ -16,8 +18,11 @@ public class SearchInArray {
 
 
         // this is about creating arraylist inside the body of the function
-        ArrayList<Integer> ans = searchAllIndexlist(arr, 4, 0, new ArrayList<>()); // new ArrayList is initialized here
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> ans = searchAllIndexlist(arr, 4, 0, list); // new ArrayList is initialized here
         System.out.println(ans + " ArrayList is created inside the body of the function");
+
+        System.out.println(list);
     }
 
     static int search(int[] arr, int target, int index){
