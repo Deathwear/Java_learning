@@ -1,11 +1,16 @@
 package Recursion_Easy;
 
+import java.util.ArrayList;
+
 public class SearchInArray {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 12, 34, 45, 67, 89};
-        System.out.println(searchIndex(arr, 34, 0));
-        System.out.println("The index value of our target is: " + search(arr, 34, 0));
-        System.out.println("The index value of our target is: "+searchFromLast(arr, 34, arr.length-1));
+        int[] arr = {2, 3, 1, 4, 4, 5};
+        System.out.println("Our Target is 4 in the arr of [2, 3, 1, 4, 4, 5]");
+        System.out.println("Is our target present in the array => " + searchIndex(arr, 4, 0));
+        System.out.println("The index value of our target is: " + search(arr, 4, 0));
+        System.out.println("The index value of our target is: "+searchFromLast(arr, 4, arr.length-1));
+        searchAllIndex(arr, 4, 0);
+        System.out.println("Index value of all occurrences are: " + list);
     }
 
     static int search(int[] arr, int target, int index){
@@ -35,5 +40,16 @@ public class SearchInArray {
         }else {
             return searchFromLast(arr, target, index - 1);
         }
+    }
+
+    static ArrayList<Integer> list = new ArrayList<>();
+    static void searchAllIndex(int[] arr, int target, int index){
+        if (index == arr.length){
+            return;
+        }
+        if (arr[index] == target){
+            list.add(index);
+        }
+        searchAllIndex(arr, target, index + 1);
     }
 }
