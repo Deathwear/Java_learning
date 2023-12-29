@@ -25,10 +25,10 @@ public class MergeSort {
     private static int[] merge(int[] first, int[] second){
         int[] mix = new int[first.length + second.length];
 
-        // Taking pointer for these three arrays (first, second & mix)
-        int i = 0;
-        int j = 0;
-        int k = 0;
+        // Taking a pointer for these three arrays (first, second & mix)
+        int i = 0;  // index pointer for 1st array
+        int j = 0;  // index pointer for 2nd (divided) arrays
+        int k = 0;  // index pointer for a new array in which first and second are going to merge.
 
 
         while(i< first.length && j< second.length){
