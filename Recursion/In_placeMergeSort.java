@@ -55,6 +55,7 @@ public class In_placeMergeSort {
             k++;
         }
         // now you have answer in mix, now you have to copy the array in the original array.
+        // we don't have to return it, so a method return type is void.
 
         for (int l = 0; l < mix.length; l++) {
             arr[s+l] = mix[l];
