@@ -4,9 +4,10 @@ public class Stream {
     public static void main(String[] args) {
         skip("", "baccad");
         System.out.println(skip_Method2("baccdah"));
+        System.out.println(skip_apple("bacapplecdah"));
     }
 
-    // in this method ans is used in the arguements.
+    // in this method ans is used in the arguments.
     static void skip(String p, String up ){ // p = processed, up = unprocessed.
         // base condition.
         if (up.isEmpty()){
@@ -38,4 +39,21 @@ public class Stream {
             return ch + skip_Method2(up.substring(1));
         }
     }
+
+    // skips a string
+    static String skip_apple(String up ){ // p = processed, up = unprocessed.
+        // base condition.
+        if (up.isEmpty()){
+            return "";
+        }
+
+
+        if (up.startsWith("apple")){  // if the char at 0th index is a then we don't need to add it in our processed string.
+            return skip_apple(up.substring(5));  // because apple has 5 characters from index 0 to 4 so begin substring with 5th index
+        }else { // else add that char into the processed string.
+            return up.charAt(0) + skip_apple(up.substring(1));
+        }
+    }
+
+
 }
