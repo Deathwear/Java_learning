@@ -5,6 +5,7 @@ public class Stream {
         skip("", "baccad");
         System.out.println(skip_Method2("baccdah"));
         System.out.println(skip_apple("bacapplecdah"));
+        System.out.println(skipAppNotApple("bacapplcdah"));
     }
 
     // in this method ans is used in the arguments.
@@ -52,6 +53,24 @@ public class Stream {
             return skip_apple(up.substring(5));  // because apple has 5 characters from index 0 to 4 so begin substring with 5th index
         }else { // else add that char into the processed string.
             return up.charAt(0) + skip_apple(up.substring(1));
+        }
+    }
+
+
+
+    // Skip a string if it is not required string.
+    // it will remove app only if there is not apple in the string.
+    static String skipAppNotApple(String up ){ // p = processed, up = unprocessed.
+        // base condition.
+        if (up.isEmpty()){
+            return "";
+        }
+
+
+        if (up.startsWith("app") && !up.startsWith("apple")){  // if the char at 0th index is a then we don't need to add it in our processed string.
+            return skipAppNotApple(up.substring(3));  // because apple has 5 characters from index 0 to 4 so begin substring with 5th index
+        }else { // else add that char into the processed string.
+            return up.charAt(0) + skipAppNotApple(up.substring(1));
         }
     }
 
