@@ -7,6 +7,7 @@ public class SubSequence {
         subseq("", "abc");
         System.out.println(subseqArray("", "abc"));
         subseqAscii("", "abc");
+        System.out.println(subseqArrayAscii("", "abc"));
     }
 
     static void subseq(String p, String up){
@@ -53,4 +54,23 @@ public class SubSequence {
         subseqAscii(p + (ch + 0), up.substring(1));
     }
 
+
+    static ArrayList<String> subseqArrayAscii(String p, String up){
+        if (up.isEmpty()){ // Base condition.
+            // create a new arraylist and add all processed values in it.
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+
+        char ch = up.charAt(0);
+
+        ArrayList<String> first = subseqArrayAscii(p + ch, up.substring(1));
+        ArrayList<String> second = subseqArrayAscii(p, up.substring(1));
+        ArrayList<String> third = subseqArrayAscii(p + (ch +0), up.substring(1));
+
+        first.addAll(second);
+        first.addAll(third);
+        return first;
+    }
 }
