@@ -74,3 +74,4 @@ public class SubSequence {
         return first;
     }
 }
+// You can ignore the edge cases to ignore the empty ones.
