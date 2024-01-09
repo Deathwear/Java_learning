@@ -6,6 +6,7 @@ public class SubSequence {
     public static void main(String[] args) {
         subseq("", "abc");
         System.out.println(subseqArray("", "abc"));
+        subseqAscii("", "abc");
     }
 
     static void subseq(String p, String up){
@@ -37,4 +38,19 @@ public class SubSequence {
         left.addAll(right);
         return left;
     }
+
+    // subsequence with ascii value
+    static void subseqAscii(String p, String up){
+        if (up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+
+        char ch = up.charAt(0);
+
+        subseqAscii(p + ch, up.substring(1));
+        subseqAscii(p, up.substring(1));
+        subseqAscii(p + (ch + 0), up.substring(1));
+    }
+
 }
