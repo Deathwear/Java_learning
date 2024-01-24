@@ -1,6 +1,6 @@
 // this is a sample sollution of leetcode question no. 17
 
-package Recursion;
+package Recursion.Practice;
 
 import java.util.ArrayList;
 
