@@ -12,8 +12,8 @@ public class MazeOnlyRight_down {
             return 1;
         }
 
-        int right = count(row-1, col);  // if man moves right then row will be decreased
-        int down = count(row, col-1);   // if man moves down then col will be reduced
+        int right = count(row, col-1);  // if man moves right then row will be decreased
+        int down = count(row-1, col);   // if man moves down then col will be reduced
 
         return right + down;
     }
