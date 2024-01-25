@@ -5,7 +5,9 @@ import java.util.ArrayList;
 public class MazeWithDiagonal{
     public static void main(String[] args) {
         path("", 3, 3);
+        System.out.print("All the possible paths returned in a list: ");
         System.out.println(pathList("", 3, 3));
+        System.out.print("No. of possible paths are: ");
         System.out.println(count(3, 3));
     }
 
