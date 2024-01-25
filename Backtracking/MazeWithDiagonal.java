@@ -11,6 +11,8 @@ public class MazeWithDiagonal{
         System.out.println(count(3, 3));
     }
 
+
+
     static void path(String p, int row, int col){
         if (row == 1 && col == 1) {
             System.out.println(p);
@@ -27,6 +29,8 @@ public class MazeWithDiagonal{
         }
     }
 
+
+
     // add all the paths in an ArrayList.
     static ArrayList<String> pathList(String p, int row, int col) {
         if (row == 1 && col == 1) { // Base condition.
@@ -40,17 +44,16 @@ public class MazeWithDiagonal{
         if (row > 1) {
             list.addAll(pathList(p + 'D', row - 1, col));
         }
-
         if (col > 1) {
             list.addAll(pathList(p + 'R', row, col - 1));
         }
         if (col>1 && row>1){
             list.addAll(pathList(p+ 'd', row-1, col-1));
         }
-
-
         return list;
     }
+
+
 
     // counting the number of possible paths.
     static int count(int row, int col){
@@ -61,8 +64,7 @@ public class MazeWithDiagonal{
         int right = count(row, col-1);  // if man moves right then row will be decreased
         int down = count(row-1, col);   // if man moves down then col will be reduced
         int diagonal = count(row-1, col-1);
+
         return right + down + diagonal;
     }
-
-
 }
