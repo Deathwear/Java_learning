@@ -33,7 +33,7 @@ public class MazePrintingPath {
             return list;
         }
 
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();  // formed inside the body so every recursion call will have that list
         if (row > 1) {
             list.addAll(pathList(p + 'D', row - 1, col));
         }
