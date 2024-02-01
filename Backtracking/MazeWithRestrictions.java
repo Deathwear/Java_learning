@@ -18,7 +18,7 @@ public class MazeWithRestrictions {
 
         // condition of the restriction.
         if (!maze[row][col]){   // it means maze[row][col] == false.
-            return;  // no further recursion is processed.s
+            return;  // no further recursion is processed
         }
 
         if (row < maze.length-1) {
