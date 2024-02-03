@@ -9,6 +9,7 @@ public class NQueens {
 
     static int queens(boolean[][] board, int row){
         // when we come to the last row, and it is placed means this is what we wanted and this is one of our possible solutions.
+        // it will only be displayed when we reach our base condition
         if (row == board.length){
             display(board);
             System.out.println();
