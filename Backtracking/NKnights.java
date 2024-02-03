@@ -12,7 +12,7 @@ public class NKnights {
         // Base condition:
         if (knights == 0){
             display(board);
-            System.out.println();
+            System.out.println();  // printing extra line when one matrix is printed.
             return;
         }
 
