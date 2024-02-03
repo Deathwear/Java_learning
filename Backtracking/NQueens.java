@@ -32,12 +32,12 @@ public class NQueens {
 
     private static boolean isSafe(boolean[][] board, int row, int col) {
         // check vertical row
-        for (int i = 0; i < row; i++) {
-            if (board[i][col]){
+        for (int i = 0; i < row; i++) {  // we don't have to check for all board.length we can only check for row.
+            if (board[i][col]){  // it is that column which is that of row; there no other queen can be placed vertically in the same column i.e., false
                 return false;
             }
         }
-
+// we have to check only for the previous occurrence, i.e., upper part.
         // check diagonal left
         int maxLeft = Math.min(row, col);
         for (int i = 1; i <= maxLeft; i++) {
